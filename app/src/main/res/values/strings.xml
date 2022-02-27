@@ -1,3 +1,36 @@
 <resources>
     <string name="app_name">TalonScoutingApp2022</string>
+
+    <string-array name="scout_names">
+        <item>Aarushi</item>
+        <item>Adhiraiyan</item>
+        <item>Aditya</item>
+        <item>Aedin</item>
+        <item>Akhil</item>
+        <item>Akshaya</item>
+        <item>Allen</item>
+        <item>Andy</item>
+        <item>Avery</item>
+        <item>Christian</item>
+        <item>Christopher</item>
+        <item>Daniel</item>
+        <item>Dylan</item>
+        <item>Evan</item>
+        <item>Isaac</item>
+        <item>Michael</item>
+        <item>Navya</item>
+        <item>Neel</item>
+        <item>Nolan</item>
+        <item>Paul</item>
+        <item>Pearl</item>
+        <item>Pragadhisvar</item>
+        <item>Rahul</item>
+        <item>Riley</item>
+        <item>Samy</item>
+        <item>Varun</item>
+        <item>Vedanth</item>
+        <item>Other</item>
+    </string-array>
+
+
 </resources>
