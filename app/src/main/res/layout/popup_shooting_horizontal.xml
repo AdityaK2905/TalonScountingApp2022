@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="500dp"
+    android:layout_height="300dp"
+    android:background="#6C6969">
+
+    <Button
+        android:id="@+id/upperGoalMake2"
+        android:layout_width="73dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="38dp"
+        android:backgroundTint="#EC0B0B"
+        android:text="Goal"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/lowerGoalMake2"
+        android:layout_width="73dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="38dp"
+        android:backgroundTint="#EC0B0B"
+        android:text="Goal"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upperGoalUndo2" />
+
+    <Button
+        android:id="@+id/shootingButtonCancel"
+        android:layout_width="99dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="234dp"
+        android:layout_marginBottom="17dp"
+        android:backgroundTint="#EC0B0B"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/shootingButtonSubmit"
+        android:layout_width="99dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="235dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#000000"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/upperGoalMiss2"
+        android:layout_width="73dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#EC0B0B"
+        android:text="Missed"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/lowerGoalMiss2"
+        android:layout_width="73dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="22dp"
+        android:backgroundTint="#EC0B0B"
+        android:text="Missed"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upperMissUndo2" />
+
+    <Button
+        android:id="@+id/upperMissUndo2"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#454545"
+        android:text="Undo"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upperGoalMiss2" />
+
+    <Button
+        android:id="@+id/lowerMissUndo2"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#454545"
+        android:text="Undo"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/shootingButtonCancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lowerGoalMiss2" />
+
+    <Button
+        android:id="@+id/upperGoalUndo2"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="38dp"
+        android:backgroundTint="#454545"
+        android:text="Undo"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upperGoalMake2" />
+
+    <Button
+        android:id="@+id/lowerGoalUndo2"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#454545"
+        android:text="Undo"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/shootingButtonSubmit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lowerGoalMake2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
