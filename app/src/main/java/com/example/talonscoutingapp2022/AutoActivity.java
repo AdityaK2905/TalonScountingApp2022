@@ -31,6 +31,11 @@ public class AutoActivity extends AppCompatActivity {
 
     }
 
+    public void startTeleOp(View v){
+        Intent teleOpIntent = new Intent(this, TeleOpActivity.class);
+        startActivity(teleOpIntent);
+    }
+
 
     //You get points if you leave the hangar in auto phase, so button for that
     public void leftHangerSuccessfully(View v){
@@ -71,7 +76,7 @@ public class AutoActivity extends AppCompatActivity {
 
     public void undoUpperMade(View v){
         if (upperMade == 0) {
-            upperMade=0;
+           return;
         }
         upperMade--;
         ((TextView)findViewById(R.id.upperMadeText2)).setText("Upper Made: " + upperMade);

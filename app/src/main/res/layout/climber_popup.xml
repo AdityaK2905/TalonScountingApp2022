@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="500dp"
+    android:background="@color/black">
+
+    <Button
+        android:id="@+id/didntClimbButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
+        android:onClick="didntClimb"
+        android:text="Didn't Climb"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/level3Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="@color/white"
+        android:onClick="climbLevel3"
+        android:text="Level 3"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/level2Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/level2Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="63dp"
+        android:backgroundTint="@color/white"
+        android:onClick="climbLevel2"
+        android:text="Level 2"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/level1Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/level1Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="79dp"
+        android:backgroundTint="@color/white"
+        android:onClick="climbLevel1"
+        android:text="Level 1"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/level4Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="49dp"
+        android:backgroundTint="@color/white"
+        android:onClick="climbLevel4"
+        android:text="Level 4"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/level3Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

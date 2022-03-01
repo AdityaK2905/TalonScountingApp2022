@@ -263,4 +263,20 @@
         app:layout_constraintBottom_toTopOf="@+id/leftHangarButton"
         app:layout_constraintStart_toEndOf="@+id/autoPhaseText" />
 
+    <Button
+        android:id="@+id/teleOpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginBottom="18dp"
+        android:backgroundTint="@color/black"
+        android:onClick="startTeleOp"
+        android:text="teleOp Phase"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lowerMissUndo3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leftTarmacText" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

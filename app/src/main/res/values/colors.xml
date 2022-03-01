@@ -10,4 +10,5 @@
     <color name="redhex">#EC0B0B</color>
     <color name="blackhex">#000000</color>
     <color name="greyHex">#454545</color>
+    <color name="greyongreyhex">#6C6969</color>
 </resources>

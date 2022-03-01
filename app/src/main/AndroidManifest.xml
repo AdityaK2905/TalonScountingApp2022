@@ -23,7 +23,7 @@
             android:exported="true">
         </activity>
         <activity
-            android:name=".popups.ShootPopupActivity"
+            android:name=".TeleOpActivity"
             android:exported="true">
         </activity>
     </application>

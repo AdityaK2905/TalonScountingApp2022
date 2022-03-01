@@ -14,7 +14,7 @@
         android:layout_marginTop="36dp"
         android:layout_marginBottom="26dp"
         android:backgroundTint="@color/redhex"
-        android:onClick="startAuto"
+        android:onClick="confirmPopup"
         android:text="StartGame"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
