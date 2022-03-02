@@ -3,6 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Rahul/StudioProjects/TalonScoutingApp2022/app/src/main/res/layout/activity_auto_screen.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Rahul/StudioProjects/TalonScoutingApp2022/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Rahul/StudioProjects/TalonScoutingApp2022/app/src/main/res/layout/climber_popup.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Rahul/StudioProjects/TalonScoutingApp2022/app/src/main/res/layout/confirm_popup.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Rahul/StudioProjects/TalonScoutingApp2022/app/src/main/res/layout/confirm_popup_endofteleop.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Rahul/StudioProjects/TalonScoutingApp2022/app/src/main/res/layout/defense_popup.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Rahul/StudioProjects/TalonScoutingApp2022/app/src/main/res/layout/end_screen.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Rahul/StudioProjects/TalonScoutingApp2022/app/src/main/res/layout/popup_shooting_far.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Rahul/StudioProjects/TalonScoutingApp2022/app/src/main/res/layout/popup_shooting_horizontal.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Rahul/StudioProjects/TalonScoutingApp2022/app/src/main/res/layout/popup_shooting_middle.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Rahul/StudioProjects/TalonScoutingApp2022/app/src/main/res/layout/popup_shooting_tarmac.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Rahul/StudioProjects/TalonScoutingApp2022/app/src/main/res/layout/shooting_info_layout.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/Rahul/StudioProjects/TalonScoutingApp2022/app/src/main/res/layout/teleop_phase_screen.xml" value="0.358695652173913" />
         <entry key="..\:/adity/TalonScoutingApp2022/app/src/main/res/layout/activity_auto_screen.xml" value="0.22" />
         <entry key="..\:/adity/TalonScoutingApp2022/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/adity/TalonScoutingApp2022/app/src/main/res/layout/climber_popup.xml" value="0.33" />

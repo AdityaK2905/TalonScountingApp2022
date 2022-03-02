@@ -132,7 +132,7 @@ public class EndScreenActivity extends AppCompatActivity {
         } else if (climber == 4){
             totalPoints += 15;
         }
-        String entry = ""+teamNum+","+matchNum+","+","+teamColor+","+leftTarmac+","+upperMade+","+lowerMade+","+upperMissed+","+lowerMissed+","+tarmacUpperShotsMade+","+tarmacUpperShotsMissed+","+tarmacLowerShotsMade+","+tarmacLowerShotsMissed+","+middleUpperShotsMade+","+middleUpperShotsMissed+","+middleLowerShotsMade+","+middleLowerShotsMissed+","+farUpperShotsMade+","+farUpperShotsMissed+","+farLowerShotsMade
+        String entry = ""+teamNum+","+matchNum+","+teamColor+","+leftTarmac+","+upperMade+","+lowerMade+","+upperMissed+","+lowerMissed+","+tarmacUpperShotsMade+","+tarmacUpperShotsMissed+","+tarmacLowerShotsMade+","+tarmacLowerShotsMissed+","+middleUpperShotsMade+","+middleUpperShotsMissed+","+middleLowerShotsMade+","+middleLowerShotsMissed+","+farUpperShotsMade+","+farUpperShotsMissed+","+farLowerShotsMade
                 +","+farLowerShotsMissed+","+climber+","+totalPoints+","+totalDefenseTimeSecs+","+defenseType+","+otherComments+","+drivingSkills;
 
 
