@@ -1,9 +1,11 @@
 package com.example.talonscoutingapp2022;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -150,6 +152,11 @@ public class EndScreenActivity extends AppCompatActivity {
         catch (Exception e) {
 
         }
+        Toast toast = Toast.makeText(getApplicationContext(), "File Downloaded! Check Directory.", Toast.LENGTH_LONG);
+        toast.show();
+
+        Intent resetIntent = new Intent(this, MainActivity.class);
+        startActivity(resetIntent);
 
     }
 
