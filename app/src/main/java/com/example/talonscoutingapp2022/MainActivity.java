@@ -18,6 +18,8 @@ import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.Toast;
 
+
+
 public class MainActivity extends AppCompatActivity {
 
     String teamNum;
@@ -59,22 +61,39 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //set team number and match number
+        /*
         EditText teamNumber =  (EditText) findViewById(R.id.editTeamNumber);
         EditText matchNumber =  (EditText) findViewById(R.id.editMatchNumber);
 
         teamNum = teamNumber.getText().toString();
         matchNum = matchNumber.getText().toString();
-
+    */
 
 
     }
 
     public void startAuto(View v){
+        //Making Data Bundle
+        Bundle bundleStart = new Bundle();
+
+        bundleStart.putString("teamNum", teamNum);
+        bundleStart.putString("matchNum", matchNum);
+        bundleStart.putString("driverStation", driverStation);
+        bundleStart.putString("scouter", scouter);
+        bundleStart.putString("teamColor", teamColor);
+
         Intent AutoIntent = new Intent(this, AutoActivity.class);
+        AutoIntent.putExtras(bundleStart);
         startActivity(AutoIntent);
     }
 
     public void confirmPopup(View view) {
+
+        EditText teamNumber =  (EditText) findViewById(R.id.editTeamNumber);
+        EditText matchNumber =  (EditText) findViewById(R.id.editMatchNumber);
+
+        teamNum = teamNumber.getText().toString();
+        matchNum = matchNumber.getText().toString();
 
         // inflate the layout of the popup window
         LayoutInflater inflater = (LayoutInflater)

@@ -1,5 +1,6 @@
 package com.example.talonscoutingapp2022;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Gravity;
@@ -19,6 +20,9 @@ import java.util.Locale;
 import java.util.Timer;
 
 public class TeleOpActivity extends AppCompatActivity {
+
+
+
     //Tarmac Shot Variables
     public int tarmacUpperShotsMade = 0;
     public int tarmacLowerShotsMade = 0;
@@ -37,19 +41,29 @@ public class TeleOpActivity extends AppCompatActivity {
 
 
     //Defense Variables
-    //public Timer defenseTimer = new Timer();
 
     public boolean is_running;
-    public boolean pin_switch;
-    public boolean hoard_switch;
 
     public int totalDefenseTimeSecs = 0;
 
-    public int totalPinTime = 0;
-    public int totalHoardTime = 0;
+
 
     //CLIMBER Variables
     int climber = 0;
+
+
+    //BUNDLE VARIABLES WOOOOOOOOOOOOOOOOOO
+    String teamNum;
+    String matchNum;
+    String driverStation;
+    String scouter;
+    String teamColor;
+
+    boolean leftTarmac = false;
+    public int upperMade = 0;
+    public int lowerMade = 0;
+    public int upperMissed = 0;
+    public int lowerMissed = 0;
 
 
 
@@ -61,10 +75,76 @@ public class TeleOpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.teleop_phase_screen);
+        Bundle bundleStart = getIntent().getExtras();
+
+        //BUNDLE VARIABLES
+        teamNum = bundleStart.getString("teamNum");
+        matchNum = bundleStart.getString("matchNum");
+        driverStation = bundleStart.getString("driverStation");
+        scouter = bundleStart.getString("scouter");
+        teamColor= bundleStart.getString("teamColor");
+
+        leftTarmac = bundleStart.getBoolean("leftTarmac");
+        upperMade = bundleStart.getInt("upperMade");
+        lowerMade = bundleStart.getInt("lowerMade");
+        upperMissed = bundleStart.getInt("upperMissed");
+        lowerMissed = bundleStart.getInt("lowerMissed");
+
         running_Timer();
 
     }
 
+    public void startEndScreen(View v){
+        //setContentView((R.layout.end_screen));
+        Bundle endBundle = new Bundle();
+        endBundle.putString("teamNum", teamNum);
+        endBundle.putString("matchNum", matchNum);
+        endBundle.putString("driverStation", driverStation);
+        endBundle.putString("scouter", scouter);
+        endBundle.putString("teamColor", teamColor);
+
+        endBundle.putBoolean("leftTarmac", leftTarmac);
+        endBundle.putInt("upperMade", upperMade);
+        endBundle.putInt("upperMissed", upperMissed);
+        endBundle.putInt("lowerMade", lowerMade);
+        endBundle.putInt("lowerMissed", lowerMissed);
+
+        //tarmacs
+        endBundle.putInt("tarmacUpperShotsMade", tarmacUpperShotsMade);
+        endBundle.putInt("tarmacUpperShotsMissed", tarmacUpperShotsMissed);
+        endBundle.putInt("tarmacLowerShotsMade", tarmacLowerShotsMade);
+        endBundle.putInt("tarmacLowerShotsMissed", tarmacLowerShotsMissed);
+        //middles
+        endBundle.putInt("middleUpperShotsMade", middleUpperShotsMade);
+        endBundle.putInt("middleUpperShotsMissed", middleUpperShotsMissed);
+        endBundle.putInt("middleLowerShotsMade", middleLowerShotsMade);
+        endBundle.putInt("middleLowerShotsMissed", middleLowerShotsMissed);
+        //fars
+        endBundle.putInt("farUpperShotsMade", farUpperShotsMade);
+        endBundle.putInt("farUpperShotsMissed", farUpperShotsMissed);
+        endBundle.putInt("farLowerShotsMade", farLowerShotsMade);
+        endBundle.putInt("farLowerShotsMissed", farLowerShotsMissed);
+
+        endBundle.putInt("climber", climber);
+        endBundle.putInt("totalDefenseTimeSecs", totalDefenseTimeSecs);
+
+
+
+
+
+        Intent endScreenIntent = new Intent(this, EndScreenActivity.class);
+        endScreenIntent.putExtras(endBundle);
+        startActivity(endScreenIntent);
+    }
+
+
+    public int getFarUpperShotsMissed(){
+        return farLowerShotsMissed;
+    }
+
+    public int getClimber(){
+        return climber;
+    }
     public void defensePopup(View view) {
 
         // inflate the layout of the popup window
@@ -482,5 +562,36 @@ public class TeleOpActivity extends AppCompatActivity {
         ((TextView)findViewById(R.id.tarmacTeleOpInfoLowerMadeText)).setText("Lower: " + tarmacLowerShotsMade);
         ((TextView)findViewById(R.id.tarmacTeleOpInfoLowerMissedText)).setText(""+tarmacLowerShotsMissed);
     }
+
+    public void confirmPopupTeleOpEnd(View view) {
+
+        // inflate the layout of the popup window
+        LayoutInflater inflater = (LayoutInflater)
+                getSystemService(LAYOUT_INFLATER_SERVICE);
+        View popupView = inflater.inflate(R.layout.confirm_popup, null);
+
+        // create the popup window
+        int width = LinearLayout.LayoutParams.WRAP_CONTENT;
+        int height = LinearLayout.LayoutParams.WRAP_CONTENT;
+        boolean focusable = true; // lets taps outside the popup also dismiss it
+        final PopupWindow popupWindow = new PopupWindow(popupView, width, height, focusable);
+
+        // show the popup window
+        // which view you pass in doesn't matter, it is only used for the window tolken
+        popupWindow.showAtLocation(view, Gravity.CENTER, 0, 0);
+
+        // dismiss the popup window when touched
+        popupView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                popupWindow.dismiss();
+                return true;
+            }
+        });
+    }
+
+
+
+
 
 }

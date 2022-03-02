@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyHex" >
+
+
+    <EditText
+        android:id="@+id/defenseTypeEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="323dp"
+        android:layout_marginEnd="562dp"
+        android:layout_marginBottom="43dp"
+        android:editable="true"
+        android:hint="Defense Type"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/otherCommentsEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="323dp"
+        android:layout_marginBottom="43dp"
+        android:editable="true"
+        android:hint="Other Comments"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/defenseTypeEditText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/drivingSkillsEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="323dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="43dp"
+        android:editable="true"
+        android:hint="Driving Team Skills"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/otherCommentsEditText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/defenseTypeText"
+        android:layout_width="168dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="229dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/greyongreyhex"
+        android:text="Types: Hoarding, Pinning, General, other(specify)"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/defenseTypeEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/generalCommentsText"
+        android:layout_width="170dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/greyongreyhex"
+        android:text="General Comments on the robot. Did you miss some balls in auto? Do they always shoot from the safe zone? Describe Here"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/otherCommentsEditText"
+        app:layout_constraintStart_toEndOf="@+id/defenseTypeText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/drivingSkillsText"
+        android:layout_width="203dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="199dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/greyongreyhex"
+        android:text="How good is the driving team? Do they navigate the field well, or are they awkward? Very Good, Good, Okay, Bad, Very Bad"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/drivingSkillsEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/generalCommentsText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/submitDataButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="579dp"
+        android:layout_marginBottom="159dp"
+        android:backgroundTint="@color/redhex"
+        android:onClick="createCSV"
+        android:text="Submit Data"
+        app:layout_constraintBottom_toTopOf="@+id/defenseTypeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/testTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="340dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

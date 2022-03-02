@@ -21,18 +21,44 @@ public class AutoActivity extends AppCompatActivity {
     public int upperMissed = 0;
     public int lowerMissed = 0;
 
-
+    //BUNDLE VARIABLES WOOOOOOOOOOOOOOOOOO
+    String teamNum;
+    String matchNum;
+    String driverStation;
+    String scouter;
+    String teamColor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auto_screen);
+        Bundle bundleStart = getIntent().getExtras();
 
+        //BUNDLE VARIABLES
+        teamNum = bundleStart.getString("teamNum");
+        matchNum = bundleStart.getString("matchNum");
+        driverStation = bundleStart.getString("driverStation");
+        scouter = bundleStart.getString("scouter");
+        teamColor= bundleStart.getString("teamColor");
 
     }
 
     public void startTeleOp(View v){
+        Bundle endBundle = new Bundle();
+        endBundle.putString("teamNum", teamNum);
+        endBundle.putString("matchNum", matchNum);
+        endBundle.putString("driverStation", driverStation);
+        endBundle.putString("scouter", scouter);
+        endBundle.putString("teamColor", teamColor);
+
+        endBundle.putBoolean("leftTarmac", leftTarmac);
+        endBundle.putInt("upperMade", upperMade);
+        endBundle.putInt("upperMissed", upperMissed);
+        endBundle.putInt("lowerMade", lowerMade);
+        endBundle.putInt("lowerMissed", lowerMissed);
+
         Intent teleOpIntent = new Intent(this, TeleOpActivity.class);
+        teleOpIntent.putExtras(endBundle);
         startActivity(teleOpIntent);
     }
 
