@@ -1,7 +1,10 @@
 package com.example.talonscoutingapp2022;
+import android.net.Uri;
 
 import android.content.Intent;
+import android.media.MediaScannerConnection;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -109,6 +112,8 @@ public class EndScreenActivity extends AppCompatActivity {
         EditText otherCommentsEditable =  (EditText) findViewById(R.id.otherCommentsEditText);
         EditText drivingSkillsEditable =  (EditText) findViewById(R.id.drivingSkillsEditText);
 
+
+        MediaScannerConnection mMs;
         drivingSkills = drivingSkillsEditable.getText().toString();
         defenseType = defenseTypeEditable.getText().toString();
         otherComments = otherCommentsEditable.getText().toString();
@@ -148,6 +153,8 @@ public class EndScreenActivity extends AppCompatActivity {
             writer.append(entry);
             writer.flush();
             writer.close();
+            sendBroadcast(new Intent(Intent.ACTION_MEDIA_MOUNTED, Uri.parse("file://"+Environment.getExternalStorageDirectory())));
+
         }
         catch (Exception e) {
 
