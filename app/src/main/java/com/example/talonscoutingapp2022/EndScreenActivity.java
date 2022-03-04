@@ -133,7 +133,7 @@ public class EndScreenActivity extends AppCompatActivity {
             totalPoints += 15;
         }
         String entry = ""+teamNum+","+matchNum+","+teamColor+","+leftTarmac+","+upperMade+","+lowerMade+","+upperMissed+","+lowerMissed+","+tarmacUpperShotsMade+","+tarmacUpperShotsMissed+","+tarmacLowerShotsMade+","+tarmacLowerShotsMissed+","+middleUpperShotsMade+","+middleUpperShotsMissed+","+middleLowerShotsMade+","+middleLowerShotsMissed+","+farUpperShotsMade+","+farUpperShotsMissed+","+farLowerShotsMade
-                +","+farLowerShotsMissed+","+climber+","+totalPoints+","+totalDefenseTimeSecs+","+defenseType+","+otherComments+","+drivingSkills;
+                +","+farLowerShotsMissed+","+climber+","+totalPoints+","+totalDefenseTimeSecs+","+defenseType+","+otherComments+","+drivingSkills+"\n";
 
 
         // Create directory if it does not exist
