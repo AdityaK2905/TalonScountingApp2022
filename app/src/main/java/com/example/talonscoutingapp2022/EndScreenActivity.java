@@ -140,12 +140,9 @@ public class EndScreenActivity extends AppCompatActivity {
         } else if (climber == 4){
             totalPoints += 15;
         }
-        String entry = ""+teamNum+","+matchNum+","+teamColor+","+leftTarmac+","+upperMade+","+lowerMade+","+upperMissed+","+lowerMissed+","+tarmacUpperShotsMade+","+tarmacUpperShotsMissed+","+tarmacLowerShotsMade+","+tarmacLowerShotsMissed+","+middleUpperShotsMade+","+middleUpperShotsMissed+","+middleLowerShotsMade+","+middleLowerShotsMissed+","+farUpperShotsMade+","+farUpperShotsMissed+","+farLowerShotsMade
-<<<<<<< HEAD
-                +","+farLowerShotsMissed+","+climber+","+totalPoints+","+totalDefenseTimeSecs+","+defenseType+","+otherComments+","+drivingSkills+","+scouter+"\n";
-=======
-                +","+farLowerShotsMissed+","+climber+","+totalPoints+","+totalDefenseTimeSecs+","+defenseType+","+otherComments+","+drivingSkills+"\n";
->>>>>>> bfbe96a3be13573294e3777f20508183719b8f6b
+        String entry = ""+teamNum+","+matchNum+","+teamColor+","+leftTarmac+","+upperMade+","+lowerMade+","+upperMissed+","+lowerMissed+","+tarmacUpperShotsMade+","+tarmacUpperShotsMissed+","+tarmacLowerShotsMade+","+tarmacLowerShotsMissed+","+middleUpperShotsMade+","+middleUpperShotsMissed+","+middleLowerShotsMade+","+middleLowerShotsMissed+","+farUpperShotsMade+","+farUpperShotsMissed+","+farLowerShotsMade +","+farLowerShotsMissed+","+climber+","+totalPoints+","+totalDefenseTimeSecs+","+defenseType+","+otherComments+","+drivingSkills+","+scouter+"\n";
+
+
 
 
         // Create directory if it does not exist
