@@ -112,6 +112,9 @@ public class EndScreenActivity extends AppCompatActivity {
         drivingSkills = drivingSkillsEditable.getText().toString();
         defenseType = defenseTypeEditable.getText().toString();
         otherComments = otherCommentsEditable.getText().toString();
+        removeCommas(drivingSkills);
+        removeCommas(defenseType);
+        removeCommas(otherComments);
 
         String FILENAME = ("m:_"+ matchNum + "_t:_"+teamNum+"_.csv");
         //((TextView)findViewById(R.id.testTextView)).setText("m:"+ matchNum + "t:"+teamNum+".csv");
@@ -132,8 +135,8 @@ public class EndScreenActivity extends AppCompatActivity {
         } else if (climber == 4){
             totalPoints += 15;
         }
-        String entry = ""+teamNum+","+matchNum+","+","+teamColor+","+leftTarmac+","+upperMade+","+lowerMade+","+upperMissed+","+lowerMissed+","+tarmacUpperShotsMade+","+tarmacUpperShotsMissed+","+tarmacLowerShotsMade+","+tarmacLowerShotsMissed+","+middleUpperShotsMade+","+middleUpperShotsMissed+","+middleLowerShotsMade+","+middleLowerShotsMissed+","+farUpperShotsMade+","+farUpperShotsMissed+","+farLowerShotsMade
-                +","+farLowerShotsMissed+","+climber+","+totalPoints+","+totalDefenseTimeSecs+","+defenseType+","+otherComments+","+drivingSkills;
+        String entry = ""+teamNum+","+matchNum+","+teamColor+","+leftTarmac+","+upperMade+","+lowerMade+","+upperMissed+","+lowerMissed+","+tarmacUpperShotsMade+","+tarmacUpperShotsMissed+","+tarmacLowerShotsMade+","+tarmacLowerShotsMissed+","+middleUpperShotsMade+","+middleUpperShotsMissed+","+middleLowerShotsMade+","+middleLowerShotsMissed+","+farUpperShotsMade+","+farUpperShotsMissed+","+farLowerShotsMade
+                +","+farLowerShotsMissed+","+climber+","+totalPoints+","+totalDefenseTimeSecs+","+defenseType+","+otherComments+","+drivingSkills+","+scouter+"\n";
 
 
         // Create directory if it does not exist
@@ -160,4 +163,8 @@ public class EndScreenActivity extends AppCompatActivity {
 
     }
 
+    public String removeCommas(String str){
+        str = str.replace(",","");
+        return str;
+    }
 }
