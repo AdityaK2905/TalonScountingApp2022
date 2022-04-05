@@ -1,7 +1,10 @@
 package com.example.talonscoutingapp2022;
+import android.net.Uri;
 
 import android.content.Intent;
+import android.media.MediaScannerConnection;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -109,6 +112,8 @@ public class EndScreenActivity extends AppCompatActivity {
         EditText otherCommentsEditable =  (EditText) findViewById(R.id.otherCommentsEditText);
         EditText drivingSkillsEditable =  (EditText) findViewById(R.id.drivingSkillsEditText);
 
+
+        MediaScannerConnection mMs;
         drivingSkills = drivingSkillsEditable.getText().toString();
         defenseType = defenseTypeEditable.getText().toString();
         otherComments = otherCommentsEditable.getText().toString();
@@ -136,7 +141,11 @@ public class EndScreenActivity extends AppCompatActivity {
             totalPoints += 15;
         }
         String entry = ""+teamNum+","+matchNum+","+teamColor+","+leftTarmac+","+upperMade+","+lowerMade+","+upperMissed+","+lowerMissed+","+tarmacUpperShotsMade+","+tarmacUpperShotsMissed+","+tarmacLowerShotsMade+","+tarmacLowerShotsMissed+","+middleUpperShotsMade+","+middleUpperShotsMissed+","+middleLowerShotsMade+","+middleLowerShotsMissed+","+farUpperShotsMade+","+farUpperShotsMissed+","+farLowerShotsMade
+<<<<<<< HEAD
                 +","+farLowerShotsMissed+","+climber+","+totalPoints+","+totalDefenseTimeSecs+","+defenseType+","+otherComments+","+drivingSkills+","+scouter+"\n";
+=======
+                +","+farLowerShotsMissed+","+climber+","+totalPoints+","+totalDefenseTimeSecs+","+defenseType+","+otherComments+","+drivingSkills+"\n";
+>>>>>>> bfbe96a3be13573294e3777f20508183719b8f6b
 
 
         // Create directory if it does not exist
@@ -151,6 +160,8 @@ public class EndScreenActivity extends AppCompatActivity {
             writer.append(entry);
             writer.flush();
             writer.close();
+            sendBroadcast(new Intent(Intent.ACTION_MEDIA_MOUNTED, Uri.parse("file://"+Environment.getExternalStorageDirectory())));
+
         }
         catch (Exception e) {
 

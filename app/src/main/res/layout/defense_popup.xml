@@ -5,7 +5,7 @@
     android:id="@+id/defensePopup"
     android:layout_width="500dp"
     android:layout_height="300dp"
-    android:background="#614545">
+    android:background="@color/greyHex">
 
     <Button
         android:id="@+id/startTimerButton"

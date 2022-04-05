@@ -11,118 +11,102 @@
         android:id="@+id/defenseTypeEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="54dp"
-        android:layout_marginTop="323dp"
-        android:layout_marginEnd="562dp"
-        android:layout_marginBottom="43dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="112dp"
         android:editable="true"
         android:hint="Defense Type"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/otherCommentsEditText"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/defenseTypeText"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/otherCommentsEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="139dp"
-        android:layout_marginTop="323dp"
-        android:layout_marginBottom="43dp"
         android:editable="true"
         android:hint="Other Comments"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/defenseTypeEditText"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/submitDataButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generalCommentsText"
+        app:layout_constraintVertical_bias="0.489" />
 
     <EditText
         android:id="@+id/drivingSkillsEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="323dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="43dp"
+        android:layout_marginStart="8dp"
         android:editable="true"
         android:hint="Driving Team Skills"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.601"
         app:layout_constraintStart_toEndOf="@+id/otherCommentsEditText"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/drivingSkillsText"
+        app:layout_constraintVertical_bias="0.206" />
 
     <TextView
         android:id="@+id/defenseTypeText"
-        android:layout_width="168dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="229dp"
-        android:layout_marginBottom="24dp"
-        android:background="@color/greyongreyhex"
+        android:layout_width="175dp"
+        android:layout_height="52dp"
+        android:background="@color/greyHex"
         android:text="Types: Hoarding, Pinning, General, other(specify)"
         android:textColor="@color/white"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/defenseTypeEditText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.211" />
 
     <TextView
         android:id="@+id/generalCommentsText"
-        android:layout_width="170dp"
-        android:layout_height="123dp"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="176dp"
-        android:layout_marginBottom="24dp"
-        android:background="@color/greyongreyhex"
+        android:layout_width="212dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="76dp"
+        android:background="@color/greyHex"
         android:text="General Comments on the robot. Did you miss some balls in auto? Do they always shoot from the safe zone? Describe Here"
         android:textColor="@color/white"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/otherCommentsEditText"
+        app:layout_constraintEnd_toStartOf="@+id/drivingSkillsText"
         app:layout_constraintStart_toEndOf="@+id/defenseTypeText"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/drivingSkillsText"
-        android:layout_width="203dp"
-        android:layout_height="114dp"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="199dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="10dp"
-        android:background="@color/greyongreyhex"
+        android:layout_width="198dp"
+        android:layout_height="91dp"
+        android:background="@color/greyHex"
         android:text="How good is the driving team? Do they navigate the field well, or are they awkward? Very Good, Good, Okay, Bad, Very Bad"
         android:textColor="@color/white"
         android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/drivingSkillsEditText"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/generalCommentsText"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237" />
 
     <Button
         android:id="@+id/submitDataButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="579dp"
-        android:layout_marginBottom="159dp"
         android:backgroundTint="@color/redhex"
         android:onClick="createCSV"
         android:text="Submit Data"
-        app:layout_constraintBottom_toTopOf="@+id/defenseTypeText"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/testTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="340dp"
-        tools:layout_editor_absoluteY="25dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
