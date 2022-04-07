@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyHex">
+
+    <TextView
+        android:id="@+id/middleTeleOpInfoLowerMissedText"
+        android:layout_width="28dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="67dp"
+        android:background="@color/greyHex"
+        android:text="0"
+        android:textColor="@color/redhex"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/outerButtonShooting" />
+
+    <TextView
+        android:id="@+id/middleTeleOpInfoUpperMissedText"
+        android:layout_width="28dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/greyHex"
+        android:text="0"
+        android:textColor="@color/redhex"
+        app:layout_constraintBottom_toTopOf="@+id/middleTeleOpInfoLowerMissedText"
+        app:layout_constraintEnd_toStartOf="@+id/outerButtonShooting" />
+
+    <TextView
+        android:id="@+id/farTeleOpInfoLowerMissedText"
+        android:layout_width="28dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="54dp"
+        android:background="@color/greyHex"
+        android:text="0"
+        android:textColor="@color/redhex"
+        app:layout_constraintBottom_toTopOf="@+id/middleTeleOpInfoUpperMissedText"
+        app:layout_constraintEnd_toStartOf="@+id/outerButtonShooting" />
+
+    <TextView
+        android:id="@+id/tarmacTeleOpInfoLowerMissedText"
+        android:layout_width="28dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="49dp"
+        android:background="@color/greyHex"
+        android:text="0"
+        android:textColor="@color/redhex"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/farTeleOpInfoUpperMissedText"
+        android:layout_width="28dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="76dp"
+        android:background="@color/greyHex"
+        android:text="0"
+        android:textColor="@color/redhex"
+        app:layout_constraintBottom_toTopOf="@+id/farTeleOpInfoLowerMissedText"
+        app:layout_constraintEnd_toStartOf="@+id/outerButtonShooting"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.888" />
+
+    <TextView
+        android:id="@+id/tarmacTeleOpInfoUpperMissedText"
+        android:layout_width="28dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/greyHex"
+        android:text="0"
+        android:textColor="@color/redhex"
+        app:layout_constraintBottom_toTopOf="@+id/tarmacTeleOpInfoLowerMissedText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shootingInfoButton" />
+
+    <TextView
+        android:id="@+id/middleTeleOpInfoLowerMadeText"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="67dp"
+        android:background="@color/greyHex"
+        android:text="Lower: 0"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/middleTeleOpInfoLowerMissedText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/farTeleOpInfoLowerMadeText"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/greyHex"
+        android:text="Lower: 0"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/middleTeleOpInfo"
+        app:layout_constraintEnd_toStartOf="@+id/farTeleOpInfoLowerMissedText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tarmacTeleOpInfoLowerMadeText"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="48dp"
+        android:background="@color/greyHex"
+        android:text="Lower: 0"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tarmacTeleOpInfoLowerMissedText"
+        app:layout_constraintStart_toEndOf="@+id/outerButtonShooting" />
+
+    <TextView
+        android:id="@+id/middleTeleOpInfoUpperMadeText"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="18dp"
+        android:background="@color/greyHex"
+        android:text="Upper: 0"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/middleTeleOpInfoLowerMadeText"
+        app:layout_constraintEnd_toStartOf="@+id/middleTeleOpInfoUpperMissedText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/outerButtonShooting"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="@color/white"
+        android:onClick="shootingFarInfoPopup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/middleShootingButton"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:backgroundTint="@color/redhex"
+        android:onClick="shootingMiddleInfoPopup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tarmacShooterButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:backgroundTint="@color/black"
+        android:onClick="shootingTarmacInfoPopup"
+        android:text="Tarmac"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/shootingInfoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="106dp"
+        android:layout_marginBottom="257dp"
+        android:backgroundTint="@color/black"
+        android:onClick="shootingInfoPopup"
+        android:text="info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/defenseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="39dp"
+        android:backgroundTint="@color/redhex"
+        android:onClick="defensePopup"
+        android:text="Defense"
+        app:layout_constraintBottom_toTopOf="@+id/shootingInfoButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/outerButtonShooting"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/farTeleOpInfo"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="14dp"
+        android:background="@color/greyHex"
+        android:text="Far:"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/farTeleOpInfoUpperMadeText"
+        app:layout_constraintEnd_toStartOf="@+id/outerButtonShooting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/missesText"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/greyHex"
+        android:text="Misses:"
+        android:textColor="@color/redhex"
+        app:layout_constraintBottom_toTopOf="@+id/farTeleOpInfoUpperMissedText"
+        app:layout_constraintEnd_toStartOf="@+id/outerButtonShooting"
+        app:layout_constraintStart_toEndOf="@+id/farTeleOpInfo"
+        app:layout_constraintTop_toBottomOf="@+id/climberButton" />
+
+    <TextView
+        android:id="@+id/missesText2"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="198dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="22dp"
+        android:background="@color/greyHex"
+        android:text="Misses:"
+        android:textColor="@color/redhex"
+        app:layout_constraintBottom_toTopOf="@+id/tarmacTeleOpInfoUpperMissedText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tarmacTeleOpInfoText"
+        app:layout_constraintTop_toBottomOf="@+id/defenseButton" />
+
+    <TextView
+        android:id="@+id/tarmacTeleOpInfoText"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="130dp"
+        android:background="@color/greyHex"
+        android:text="Tarmac"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/outerButtonShooting"
+        app:layout_constraintTop_toBottomOf="@+id/shootingInfoButton" />
+
+    <TextView
+        android:id="@+id/middleTeleOpInfo"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="21dp"
+        android:background="@color/greyHex"
+        android:text="Middle:"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/middleTeleOpInfoUpperMadeText"
+        app:layout_constraintEnd_toStartOf="@+id/outerButtonShooting"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/farTeleOpInfoUpperMadeText"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="21dp"
+        android:background="@color/greyHex"
+        android:text="Upper: 0"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/farTeleOpInfoLowerMadeText"
+        app:layout_constraintEnd_toStartOf="@+id/farTeleOpInfoUpperMissedText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tarmacTeleOpInfoUpperMadeText"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="19dp"
+        android:background="@color/greyHex"
+        android:text="Upper: 0"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tarmacTeleOpInfoLowerMadeText"
+        app:layout_constraintEnd_toStartOf="@+id/tarmacTeleOpInfoUpperMissedText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/outerButtonShooting"
+        app:layout_constraintTop_toBottomOf="@+id/tarmacTeleOpInfoText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/totalDefenseTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/greyHex"
+        android:text="Defense Time: 0"
+        android:textColor="@color/redhex"
+        app:layout_constraintBottom_toTopOf="@+id/outerButtonShooting"
+        app:layout_constraintEnd_toStartOf="@+id/defenseButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/climberButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="74dp"
+        android:backgroundTint="@color/redhex"
+        android:onClick="climberPopup"
+        android:text="Climber"
+        app:layout_constraintBottom_toTopOf="@+id/farTeleOpInfo"
+        app:layout_constraintEnd_toStartOf="@+id/outerButtonShooting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/climberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="48dp"
+        android:background="@color/greyHex"
+        android:text="Level: 0"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/farTeleOpInfo"
+        app:layout_constraintEnd_toStartOf="@+id/outerButtonShooting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/climberButton" />
+
+    <Button
+        android:id="@+id/endOfGameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="31dp"
+        android:backgroundTint="@color/black"
+        android:onClick="startEndScreen"
+        android:text="End Game"
+        app:layout_constraintBottom_toTopOf="@+id/missesText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toEndOf="@+id/outerButtonShooting"
+        app:layout_constraintTop_toBottomOf="@+id/shootingInfoButton"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
