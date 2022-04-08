@@ -1,6 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/blueRectangle"
+        android:layout_width="437dp"
+        android:layout_height="273dp"
+        android:layout_marginEnd="856dp"
+        android:layout_marginBottom="540dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/bluerectangle" />
+
+    <ImageView
+        android:id="@+id/redRectangle"
+        android:layout_width="437dp"
+        android:layout_height="273dp"
+        android:layout_marginStart="852dp"
+        android:layout_marginTop="547dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/redrectangle" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="302dp"
+        android:layout_height="371dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginBottom="214dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/goalhole" />
+
+    <Button
+        android:id="@+id/safeZoneButton1"
+        android:layout_width="73dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="356dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#2341D8"
+        android:text="Safe"
+        app:layout_constraintBottom_toTopOf="@+id/redRectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/safeZoneButton2"
+        android:layout_width="73dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="351dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="371dp"
+        android:backgroundTint="@color/redhex"
+        android:text="Safe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blueRectangle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

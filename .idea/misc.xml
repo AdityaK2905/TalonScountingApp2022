@@ -20,8 +20,13 @@
         <entry key="..\:/Users/Rahul/StudioProjects/TalonScoutingApp2022/app/src/main/res/layout/teleop_phase_screen.xml" value="0.358695652173913" />
         <entry key="..\:/Users/Rahul/StudioProjects/TalonScoutingApp2022/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.196" />
         <entry key="..\:/Users/Rahul/StudioProjects/TalonScoutingApp2022/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.196" />
+        <entry key="..\:/adity/TalonScoutingApp2022/app/src/main/res/drawable/ic_baseline_crop_square_24.xml" value="0.2985" />
         <entry key="..\:/adity/TalonScoutingApp2022/app/src/main/res/layout/activity_auto_screen.xml" value="0.22" />
         <entry key="..\:/adity/TalonScoutingApp2022/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/adity/TalonScoutingApp2022/app/src/main/res/layout/alt2_tele_op.xml" value="0.16336633663366337" />
+        <entry key="..\:/adity/TalonScoutingApp2022/app/src/main/res/layout/alt3_tele_op.xml" value="0.15" />
+        <entry key="..\:/adity/TalonScoutingApp2022/app/src/main/res/layout/alternate_tele_op.xml" value="0.2" />
+        <entry key="..\:/adity/TalonScoutingApp2022/app/src/main/res/layout/basictest.xml" value="0.18802083333333333" />
         <entry key="..\:/adity/TalonScoutingApp2022/app/src/main/res/layout/climber_popup.xml" value="0.33" />
         <entry key="..\:/adity/TalonScoutingApp2022/app/src/main/res/layout/confirm_popup.xml" value="0.358695652173913" />
         <entry key="..\:/adity/TalonScoutingApp2022/app/src/main/res/layout/confirm_popup_TeleOpEnd.xml" value="0.18802083333333333" />
@@ -35,7 +40,8 @@
         <entry key="..\:/adity/TalonScoutingApp2022/app/src/main/res/layout/popuptesting.xml" value="0.1" />
         <entry key="..\:/adity/TalonScoutingApp2022/app/src/main/res/layout/popuptestingvertical.xml" value="0.18802083333333333" />
         <entry key="..\:/adity/TalonScoutingApp2022/app/src/main/res/layout/shooting_info_layout.xml" value="0.33" />
-        <entry key="..\:/adity/TalonScoutingApp2022/app/src/main/res/layout/teleop_phase_screen.xml" value="0.25" />
+        <entry key="..\:/adity/TalonScoutingApp2022/app/src/main/res/layout/teleop_phase_screen.xml" value="0.2" />
+        <entry key="..\:/adity/TalonScoutingApp2022/app/src/main/res/layout/teleop_phase_screen2.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_auto_screen.xml" value="0.15520833333333334" />
       </map>
     </option>

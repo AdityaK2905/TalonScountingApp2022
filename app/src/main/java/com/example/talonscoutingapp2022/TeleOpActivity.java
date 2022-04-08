@@ -513,7 +513,7 @@ public class TeleOpActivity extends AppCompatActivity {
                 }
 
                 handle.postDelayed(this, 1000);
-                ((TextView)findViewById(R.id.totalDefenseTimeText)).setText("Total Defense: "+totalDefenseTimeSecs );
+                //((TextView)findViewById(R.id.totalDefenseTimeText)).setText("Total Defense: "+totalDefenseTimeSecs );
 
             }
         });
@@ -522,30 +522,31 @@ public class TeleOpActivity extends AppCompatActivity {
     //Climber Methods
     public void climbLevel1(View v){
         climber = 1;
-        ((TextView)findViewById(R.id.climberText)).setText("Climber: " + climber);
+        //((TextView)findViewById(R.id.climberText)).setText("Climber: " + climber);
     }
 
     public void climbLevel2(View v){
         climber = 2;
-        ((TextView)findViewById(R.id.climberText)).setText("Climber: " + climber);
+        //((TextView)findViewById(R.id.climberText)).setText("Climber: " + climber);
     }
 
     public void climbLevel3(View v){
         climber = 3;
-        ((TextView)findViewById(R.id.climberText)).setText("Climber: " + climber);
+       // ((TextView)findViewById(R.id.climberText)).setText("Climber: " + climber);
     }
 
     public void climbLevel4(View v){
         climber = 4;
-        ((TextView)findViewById(R.id.climberText)).setText("Climber: " + climber);
+       // ((TextView)findViewById(R.id.climberText)).setText("Climber: " + climber);
     }
 
     public void didntClimb(View v){
         climber = 0;
-        ((TextView)findViewById(R.id.climberText)).setText("Climber: " + climber);
+       // ((TextView)findViewById(R.id.climberText)).setText("Climber: " + climber);
     }
 
     public void updateAllTexts(){
+        /*
         //Far
         ((TextView)findViewById(R.id.farTeleOpInfoUpperMadeText)).setText("Upper: " + farUpperShotsMade);
         ((TextView)findViewById(R.id.farTeleOpInfoUpperMissedText)).setText(""+farUpperShotsMissed);
@@ -561,6 +562,8 @@ public class TeleOpActivity extends AppCompatActivity {
         ((TextView)findViewById(R.id.tarmacTeleOpInfoUpperMissedText)).setText(""+tarmacUpperShotsMissed);
         ((TextView)findViewById(R.id.tarmacTeleOpInfoLowerMadeText)).setText("Lower: " + tarmacLowerShotsMade);
         ((TextView)findViewById(R.id.tarmacTeleOpInfoLowerMissedText)).setText(""+tarmacLowerShotsMissed);
+
+         */
     }
 
     public void confirmPopupTeleOpEnd(View view) {

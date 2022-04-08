@@ -117,9 +117,9 @@ public class EndScreenActivity extends AppCompatActivity {
         drivingSkills = drivingSkillsEditable.getText().toString();
         defenseType = defenseTypeEditable.getText().toString();
         otherComments = otherCommentsEditable.getText().toString();
-        removeCommas(drivingSkills);
-        removeCommas(defenseType);
-        removeCommas(otherComments);
+        drivingSkills = removeCommas(drivingSkills);
+        defenseType = removeCommas(defenseType);
+        otherComments = removeCommas(otherComments);
 
         String FILENAME = ("m:_"+ matchNum + "_t:_"+teamNum+"_.csv");
         //((TextView)findViewById(R.id.testTextView)).setText("m:"+ matchNum + "t:"+teamNum+".csv");
