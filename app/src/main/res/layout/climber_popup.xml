@@ -45,7 +45,7 @@
         android:layout_marginBottom="63dp"
         android:backgroundTint="@color/redhex"
         android:onClick="climbLevel2"
-        android:text="Med"
+        android:text="Mid"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/level1Button"
         app:layout_constraintEnd_toEndOf="parent"
