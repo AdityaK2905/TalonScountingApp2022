@@ -74,6 +74,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void startAuto(View v){
         //Making Data Bundle
+        Spinner scoutingList = (Spinner) findViewById(R.id.scouterList);
+
+        scouter = scoutingList.getSelectedItem().toString();
+
         Bundle bundleStart = new Bundle();
 
         bundleStart.putString("teamNum", teamNum);
